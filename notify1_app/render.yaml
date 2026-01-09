@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: notify-app
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python notify.py
